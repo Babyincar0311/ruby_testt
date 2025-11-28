@@ -1,0 +1,40 @@
+<%# app/views/students/show.html.erb %>
+
+<h1>Student Details</h1>
+
+<p>
+  <strong>Code:</strong>
+  <%= @student.student_code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.full_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @student.address %>
+</p>
+
+<h2>Scores</h2>
+<% if @student.student_scores.any? %>
+  <ul>
+    <% @student.student_scores.each do |score| %>
+      <li>
+        <%= score.subject.subject_name %> -
+        Score: <%= score.score1 %>, <%= score.score2 %>
+        Grade: <%= score.grade %>
+        <%= link_to 'Edit Score', edit_student_student_score_path(@student, score) %>
+      </li>
+    <% end %>
+  </ul>
+
+<% else %>
+  <p>No scores available.</p>
+<% end %>
+
+<hr>
+
+<%= link_to 'Edit Student', edit_student_path(@student) %> |
+<%= link_to 'Back to List', students_path %>

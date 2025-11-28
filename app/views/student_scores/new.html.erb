@@ -1,0 +1,25 @@
+<h1>Add Score</h1>
+<%= form_with(model: [@student, @student_score], local: true) do |f| %>
+
+  <div>
+    <%= f.label :student_id, "Student" %>
+    <%= f.collection_select :student_id, @students, :id, :full_name %>
+  </div>
+
+  <div>
+    <%= f.label :subject_id, "Subject" %>
+    <%= f.collection_select :subject_id, @subjects, :id, :subject_name %>
+  </div>
+
+  <div>
+    <%= f.label :score1 %>
+    <%= f.number_field :score1, step: 0.1 %>
+  </div>
+
+  <div>
+    <%= f.label :score2 %>
+    <%= f.number_field :score2, step: 0.1 %>
+  </div>
+
+  <%= f.submit "Save" %>
+<% end %>

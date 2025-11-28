@@ -1,0 +1,10 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: phamgiakhang
+  password: 'Khang@311@3'
+  host: localhost
+
+development:
+  <<: *default
+  database: sis

@@ -1,0 +1,38 @@
+<%# app/views/students/_form.html.erb %>
+
+<%= form_with model: @student, local: true do |f| %>
+
+  <%# HIỂN THỊ LỖI XÁC THỰC %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation" style="border: 1px solid red; padding: 10px; margin-bottom: 15px; background-color: #fdd;">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+      <ul>
+        <% @student.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%# CÁC TRƯỜNG NHẬP LIỆU %>
+  <div>
+    <%= f.label :student_code %>
+    <%= f.text_field :student_code %>
+  </div>
+
+  <div>
+    <%= f.label :full_name %>
+    <%= f.text_field :full_name %>
+  </div>
+
+  <div>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="actions" style="margin-top: 15px;">
+    <%= f.submit "Save" %>
+  </div>
+
+
+<% end %>
