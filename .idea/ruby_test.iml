@@ -3062,6 +3062,44 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="rdoc (v6.16.1) [path][gem]" type="rubylib">
+        <properties>
+          <option name="additionalInfo">
+            <AdditionalInfo>
+              <option name="authors" value="N/A" />
+              <option name="email" value="N/A" />
+              <option name="homepage" value="N/A" />
+              <option name="summary" value="N/A" />
+            </AdditionalInfo>
+          </option>
+          <option name="fromPath" value="true" />
+          <option name="name" value="rdoc" />
+          <option name="requirePaths">
+            <list>
+              <option value="lib" />
+            </list>
+          </option>
+          <option name="url" value="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1" />
+          <option name="version" value="6.16.1" />
+        </properties>
+        <CLASSES>
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/exe" />
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/lib" />
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/man" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/exe" />
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/lib" />
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/man" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/exe" />
+          <root url="file://$USER_HOME$/.gem/ruby/3.3.0/ruby/3.3.0/gems/rdoc-6.16.1/man" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="regexp_parser (v2.11.3) [path][gem]" type="rubylib">
         <properties>
           <option name="additionalInfo">
